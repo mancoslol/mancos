@@ -1,0 +1,138 @@
+*{
+    font-family: 'Oswald', sans-serif;
+}
+.nav-item{
+    font-family: 'Oswald', sans-serif;
+    padding: 1px;
+}
+
+.nav-item:hover{
+    background-color: rgba(0, 255, 255, 0.712);
+    border-radius: 5%;
+}
+
+.menu{
+    background-color: black;
+}
+
+.opt{
+   margin-left: 220px;
+}
+
+.icon{
+    margin-left: 50px;
+}
+
+video{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    opacity:0.4;
+}
+
+.content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.content1{
+    position: absolute;
+    margin-top: 20px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+#playnow{
+    background-color: rgba(4, 206, 233, 0.719);
+    width: 200px;
+    height: 30px;
+    margin-bottom: 100px;
+    font-style:oblique;
+    color: #000;
+    text-align: center;
+    position:relative;
+    text-decoration: none;
+    border: 1px solid black;
+    font-family: 'Oswald', sans-serif;
+}
+
+#login{
+    background-color: rgb(39, 38, 38);
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+#play{
+    background-color: rgba(0, 255, 255, 0.712);
+    border-radius: 10px;
+    color: black;
+}
+
+#play:hover{
+    background-color: rgba(0, 225, 255, 0.712);
+}
+
+#playnow:hover{
+    background-color: rgba(0, 255, 255, 0.712);
+}
+#playnow::after,#playnow::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: rgb(252, 248, 16);
+    margin: 1px;
+    transform: scale(0);
+    transition: all 0.3s ease-in;
+}
+
+#playnow:hover::after, #playnow:hover::before{
+    transform: scale(1);
+}
+
+#playnow::before{
+    left:0px;
+    margin-top: -7px;
+}
+
+#playnow::after{
+    right:0px;
+    margin-top: 0px;
+}
+
+.quelol{
+    color: rgb(211, 119, 33);
+}
+
+.quelol1{
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.rol-h1{
+    width: 50px;
+    margin-left: 702px;
+}
+
+
+
+
