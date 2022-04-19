@@ -120,17 +120,17 @@ video{
     color: rgb(211, 119, 33);
 }
 
-.quelol1{
-    margin-left: 150px;
-    margin-right: 150px;
-    font-size: 25px;
-    font-family: 'Oswald', sans-serif;
-    
+p{
+    font-size: 20px;
 }
 
-.rol-h1{
-    width: 50px;
-    margin-left: 702px;
+.noticias{
+    position:relative;
+    margin-top: 800px;
+    border: #000 solid;
+    width: 100%;
+    height: 400px;
+    
 }
 
 
