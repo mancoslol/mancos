@@ -87,7 +87,7 @@
 }
 
 #playnow:hover{
-    background-color: rgba(0, 255, 255, 0.712);
+    background-color: rgba(4, 196, 196, 0.926);
 }
 #playnow::after,#playnow::before{
     content: "";
@@ -95,7 +95,7 @@
     width: 150px;
     height: 2px;
     border-radius: 2px;
-    background-color: rgb(252, 248, 16);
+    background-color: rgb(6, 6, 6);
     margin: 1px;
     transform: scale(0);
     transition: all 0.3s ease-in;
@@ -167,6 +167,20 @@ p{
         
     }
     
+}
+
+@media screen and (min-width: 0px) and (max-width:999px){
+    #login{
+        width:100px;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    #play{
+        width: 100px;
+        margin-top: 5px;
+        
+    }
 }
 
 

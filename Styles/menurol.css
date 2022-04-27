@@ -32,6 +32,8 @@ ul.slider li:target{
     opacity: 1;
 }
 
+
+
 .menus{
     text-align: center;
     margin: 50px;
@@ -52,7 +54,7 @@ ul.slider li:target{
 }
 
 .menus li a:hover{
-    width: 100px;
+    width: 90px;
     height: 50px;
     background-color: rgb(184, 103, 28);
 }
@@ -75,6 +77,19 @@ ul.slider li:target{
 
 #a6{
     background-color:rgb(184, 8, 8);
+}
+
+@media screen and (min-width: 0px) and (max-width:999px){
+   
+    .menus{
+        margin: auto;
+        margin-bottom: 15px;
+        
+    }
+
+    li{
+        margin-bottom: 10px;
+    }
 }
 
 
