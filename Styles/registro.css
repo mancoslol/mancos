@@ -6,7 +6,16 @@ form{
     
 }
 
-*{
-    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fencrypted-tbn3.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcStJOZJ8I6GWv1kqOJVgJL7EsLYfLmiL-Vxbu7BpPrurPsUHXvE&psig=AOvVaw0rKQAQ_XDm8Z0F7GXuoUF7&ust=1651148716032000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCJjP5J6ctPcCFQAAAAAdAAAAABAD);
+body{
+    background-image: url(/mancos/assets/img/register.jpg);
+}
+
+.container{
+    
+    width: 600px;
+    height: 300px;
+    background-color: azure;
+    border-radius: 20px;
+    text-align: center;
 }
 

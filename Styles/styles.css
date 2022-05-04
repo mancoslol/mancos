@@ -15,9 +15,10 @@
     background-color: black;
 }
 
-.opt{
-   margin-left: 280px;
-   text-align: center;
+
+
+#gamep{
+   margin-left: 350px;
 }
 
 
@@ -134,6 +135,10 @@ p{
 
 
 @media screen and (min-width: 1000px) and (max-width: 1900px){
+    .opt{
+        margin-left: 280px;
+        text-align: center;
+     }
     video{
         position: relative;
         width: 100%;
