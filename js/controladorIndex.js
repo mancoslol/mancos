@@ -1,5 +1,5 @@
 //VERIFICAR SI EL USUARIO ESTA REGISTRADO O HIZO LOGIN
-import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"
+import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"
 
 //referencia al nombre de usuario o avatar
 //referencia al boton de salir
@@ -16,8 +16,9 @@ onAuthStateChanged(auth, (user) => {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/firebase.User
     const uid = user.uid;
-    avatar.textContent=user.email
+    
     avatar.classList.add("invisible")
+    avatar.textContent=user.email
     botonlogin.classList.add("invisible")
 
 

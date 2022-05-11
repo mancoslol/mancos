@@ -7,7 +7,8 @@ form{
 }
 
 body{
-    background-image: url(/assets/img/register.jpg);
+    background-image: url(/assets/img/login.jpg);
+    
 }
 
 .container{
@@ -18,4 +19,3 @@ body{
     border-radius: 20px;
     text-align: center;
 }
-
