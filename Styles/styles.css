@@ -134,7 +134,7 @@ p{
 }
 
 
-@media screen and (min-width: 1000px) and (max-width: 1900px){
+@media screen and (min-width: 900px) and (max-width: 2400px){
     .opt{
         margin-left: 280px;
         text-align: center;

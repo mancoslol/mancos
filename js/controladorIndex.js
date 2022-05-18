@@ -16,10 +16,9 @@ onAuthStateChanged(auth, (user) => {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/firebase.User
     const uid = user.uid;
-    
-    avatar.classList.add("invisible")
+    console.log(user)
+    avatar.classList.remove("invisible")
     avatar.textContent=user.email
-    botonlogin.classList.add("invisible")
 
 
     //RUTINA DE SALIR
@@ -40,6 +39,7 @@ onAuthStateChanged(auth, (user) => {
 
     // ...
   } else {
+    avatar.classList.add("d-none")
     // User is signed out
     // ...
   }

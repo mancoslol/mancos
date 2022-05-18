@@ -23,6 +23,7 @@ boton.addEventListener("click", function (evento) {
             setTimeout(function () {
                 modalregistro.hide()
             }, 4000)
+            window.location.href="index.html"
         })
         .catch((error) => {
             const errorCode = error.code;
