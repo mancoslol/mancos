@@ -1,21 +1,27 @@
+import { ampliarinformacion } from "./ampliarinfo.js"
+import { llenartienda } from "./tienda.js"
 
-import { llenartienda } from "./tienda"
 
+let producto= {}
 
-let modalinfo = new bootstrap.Modal(document.getElementById('modalinfor'))
+let modalinfo = new bootstrap.Modal(document.getElementById('modalinfor'));
+console.log(modalinfo)
 
 llenartienda()
 
-let contenedorTienda = document.getElementById("filas")
+let contenedorTienda = document.getElementById("fila")
 
-contenedorTienda.addEventListener("click", function (evento) {
-    if (evento.target.classList.contains("button")) {
+contenedorTienda.addEventListener("click", function (event) {
+    console.log(event.target.parentElement.classList)
+    if (event.target.parentElement.classList.contains("card")) {
 
 
-        producto = ampliarinformacion(evento)
-
+        producto = ampliarinformacion(event)
+        
 
         modalinfo.show()
 
     }
 })
+
+console.log(contenedorTienda)

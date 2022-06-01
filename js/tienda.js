@@ -1,8 +1,4 @@
-function llenartienda(event){
-
-
-
-
+export function llenartienda(event){
 
     let productos = [
         {foto: 'assets/img/tienda/ahrikda.jpg', nombre: "Figura Ahri K/DA Pop Stars", precio:600000, descripcion:"La líder de K/DA te hechizará con sus talentos. Con detalles impecables, sus nueve colas se han creado con partes translúcidas para lograr un aspecto impresionante. Además, su sonrisa seductora cautivará con total seguridad a sus fans."},
@@ -24,7 +20,7 @@ function llenartienda(event){
         {foto: 'assets/img/tienda/pelucherenekton.jpg', nombre: "Peluche Renekton", precio:70000, descripcion: "Este peluche de Renekton tiene una rabia desmedida, pero igual lo único que necesita es un abrazo."},
         {foto: 'assets/img/tienda/peluchetft.jpg', nombre: "Peluche Minilyenda TFT", precio:50000, descripcion: "Aunque se lo conoce por su dulce naturaleza, puede despertar un poder feroz si se lo provoca... o se lo puede engatusar con unos snacks para que entre en acción."},
         {foto: 'assets/img/tienda/pines.jpg', nombre: "Pines", precio:10000, descripcion: "Mostradle al mundo vuestro verdadero yo de la mano del pack 1 de pines esmaltados de emoticonos."},
-        {foto: 'assets/img/tienda/riven.jpg', nombre: "Figurita Riven", precio:80000, descripcion: ""},
+        {foto: 'assets/img/tienda/riven.jpg', nombre: "Figurita Riven", precio:80000, descripcion: "A"},
     ]
 
     let fila = document.getElementById("fila")
@@ -33,7 +29,7 @@ function llenartienda(event){
         let columna = document.createElement("div")
         columna.classList.add("col")
 
-        tarjeta = document.createElement("button")
+        let tarjeta = document.createElement("button")
         tarjeta.classList.add("card")
         tarjeta.classList.add("h-100")
 
@@ -48,6 +44,7 @@ function llenartienda(event){
      
           let descripcion = document.createElement("p")
           descripcion.classList.add("text-left")
+          descripcion.classList.add("display-none")
           descripcion.textContent=producto.descripcion
           
           let precio = document.createElement("h5")
@@ -61,6 +58,7 @@ function llenartienda(event){
           tarjeta.appendChild(nombre)
           tarjeta.appendChild(foto)
           tarjeta.appendChild(nombre)
+          tarjeta.appendChild(descripcion)
           tarjeta.appendChild(precio)
           columna.appendChild(tarjeta)
           fila.appendChild(columna)
@@ -69,6 +67,6 @@ function llenartienda(event){
 
 }
 
-llenartienda()
+
 
 

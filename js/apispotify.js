@@ -5,12 +5,7 @@ const URI="https://api.spotify.com/v1/artists/47mIJdHORyRerp4os813jD/top-tracks?
 
 //2. declara losparametros de la peticion (que voy a hacer)
 
-const TOKEN="Bearer BQCSc-96qbZy4JW0B2gLbNVPXZ2T7pizeyCixlS4Y-foH4ZVsYbMJvUOq4aDE8dLn5ksI00MwPAZvrVdPXdnmmI8qalAj5cG3jYWUlsLyGOO1qtJf6il9y_mm5LJ52D8HWcUBnaEBkBpDZBumhEmYkTqR2gAPd9qKxs"
 
-const PETICION={
-    method: "GET",
-    headers:{Authorization:TOKEN}
-}
 
 //RUTINA PARA CONSUMIR API CON METODO POST}
 //1. URI PARA DONDE VOY
@@ -29,15 +24,26 @@ const PETICIONPOST={
     },
     body:dato1+'&'+dato2+'&'+dato3
 }
-
-//3. Intento consumir el API (PROMESA)
-fetch(URI,PETICION)
+fetch(URIPOST, PETICIONPOST)
 .then(function(respuesta){
     return (respuesta.json())
 })
 .then(function(respuesta){
     console.log(respuesta) //RESPUESTA DE SPOTIFY SERVER
-    //recorreindo el arreglo
+    const TOKEN=respuesta.token_type+" "+respuesta.access_token
+
+const PETICION={
+    method: "GET",
+    headers:{Authorization:TOKEN}
+}
+
+console.log(PETICION)
+fetch(URI,PETICION)
+.then(function(respuesta){
+    return (respuesta.json())
+})
+.then(function(respuesta){
+    console.log(respuesta) 
     
     let fila=document.getElementById("fila")
     respuesta.tracks.forEach(function(cancion){
@@ -80,3 +86,6 @@ fetch(URI,PETICION)
 .catch(function(respuesta){
     console.log(respuesta)
 })
+})
+
+//3. Intento consumir el API (PROMESA)
