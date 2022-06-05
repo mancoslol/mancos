@@ -29,6 +29,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 opt">
 
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" id="vercarrito">
+                          <i class="bi bi-cart2 text-danger"></i>
+                          <span id="capsula"
+                            class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger invisible">
+                            99+
+                          </span>
+                        </a>
+                      </li>
+
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">JUEGO</a>
                         </li>
@@ -54,7 +64,6 @@
                         <li class="nav-item" id="play">
                             <a class="nav-link active" aria-current="page" href="#">JUEGA AHORA</a>
                         </li>
-
 
                     </ul>
 
@@ -105,6 +114,36 @@
     
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 <button type="button" class="btn btn-primary" id="anadirc">Añadir al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <!-- Modal -->
+        <div class="modal fade" id="resumencompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">TIENDA</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container" id="basecarro">
+    
+                </div>
+                <p id="total"></p>
+                <button type="button" class="btn btn-success" id="usd">Precio en USD</button>
+                <button type="button" class="btn btn-warning" id="cop">Precio en COP</button>
+              </div>
+              <div class="modal-footer">
+    
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="limpiar">Limpiar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Comprar</button>
               </div>
             </div>
           </div>
