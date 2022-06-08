@@ -41,15 +41,17 @@ export function llenartienda(event){
           
           let nombre=document.createElement("h4")
           nombre.textContent=producto.nombre
+          nombre.classList.add("text-center")
+          nombre.classList.add("text-danger")
+
      
           let descripcion = document.createElement("p")
           descripcion.classList.add("text-left")
-          descripcion.classList.add("display-none")
+          descripcion.classList.add("display:none")
           descripcion.textContent=producto.descripcion
           
           let precio = document.createElement("h5")
-          
-          precio.classList.add("gray")
+          precio.classList.add("text-success")
           precio.classList.add("number")
           precio.textContent=producto.precio
      
@@ -58,7 +60,7 @@ export function llenartienda(event){
           tarjeta.appendChild(nombre)
           tarjeta.appendChild(foto)
           tarjeta.appendChild(nombre)
-          tarjeta.appendChild(descripcion)
+          tarjeta.appendChild(descripcion).style.display = "none"
           tarjeta.appendChild(precio)
           columna.appendChild(tarjeta)
           fila.appendChild(columna)

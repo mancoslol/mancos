@@ -5,7 +5,9 @@ import { llenartienda } from "./tienda.js"
 let producto= {}
 
 let modalinfo = new bootstrap.Modal(document.getElementById('modalinfor'));
+let modalcompra = new bootstrap.Modal(document.getElementById('resumencompra'))
 console.log(modalinfo)
+console.log(modalcompra)
 
 llenartienda()
 
@@ -27,11 +29,11 @@ contenedorTienda.addEventListener("click", function (event) {
 
 //rutina para el anadir un producto a la cesta a la cesta 
 let carrito=[]
-let botonAgregarCarrito=document.getElementById("botonadd")
+let botonAgregarCarrito=document.getElementById("anadirc")
 botonAgregarCarrito.addEventListener("click",function(){
 
     //Debo capturar la cantidad y agregarla al producto 
-    let cantidad=document.getElementById("cantidadProducto").value
+    let cantidad=document.getElementById("cantproducto").value
 
     producto.cantidad = cantidad
 
@@ -49,7 +51,7 @@ botonAgregarCarrito.addEventListener("click",function(){
         suma = suma + Number(producto.cantidad)
     })
 
-    document.getElementById("cantidadProducto").value = 1
+    document.getElementById("cantproducto").value = 1
 
     let capsula=document.getElementById("capsula")
 
@@ -88,6 +90,7 @@ botonVerCarrito.addEventListener("click",function(){
 
         let fila=document.createElement("div")
         fila.classList.add("row")
+        fila.classList.add("hr")
 
         let fila2 = document.createElement("div")
         fila2.classList.add("row")
@@ -103,11 +106,11 @@ botonVerCarrito.addEventListener("click",function(){
         foto.src=producto.foto
 
         let nombre1=document.createElement("h4")
-        nombre1.classList.add("text-warning")
+        nombre1.classList.add("text-light")
         nombre1.textContent=producto.nombre
 
         let precio = document.createElement("p")
-        precio.classList.add("text-ligth")
+        precio.classList.add("text-light")
         precio.textContent = "Precio UN: $" + producto.precio + "COP"
 
         let subtotal = document.createElement("p")
